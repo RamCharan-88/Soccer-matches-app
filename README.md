@@ -1,4 +1,4 @@
-# ⚽ Soccer Matches Tracker
+# ⚽ Soccer Matches App
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue)
 ![Flask](https://img.shields.io/badge/flask-2.0+-green)
