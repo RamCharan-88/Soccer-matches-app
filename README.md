@@ -1,62 +1,108 @@
-# Soccer-matches-app
-⚽ Soccer Matches App
-A web application that displays upcoming soccer matches using the Football-Data.org API. Built with Python Flask backend and vanilla JavaScript frontend.
+# ⚽ Soccer Matches Tracker
 
-App Screenshot (add real screenshot later)
+![Python](https://img.shields.io/badge/python-3.8+-blue)
+![Flask](https://img.shields.io/badge/flask-2.0+-green)
+![JavaScript](https://img.shields.io/badge/javascript-ES6+-yellow)
 
-Features
-🗓️ View upcoming soccer matches with dates/times
+A web application that displays upcoming soccer matches using the [Football-Data.org API](https://www.football-data.org/).
 
-⚔️ See matchups between teams
+![App Screenshot](./screenshot.png) *(Replace with actual screenshot)*
 
-🌐 Responsive design works on all devices
+## ✨ Features
 
-⚡ Fast loading with async API calls
+- 📅 View upcoming matches with date/time
+- ⚽ See matchups between teams
+- 🔄 Auto-refreshing data
+- 🎨 Clean, responsive interface
+- ⚡ Fast loading with async API calls
 
-🔄 Auto-refreshing data
+## 🛠️ Tech Stack
 
-Tech Stack
-Backend:
+**Backend**:
+- Python 3
+- Flask (Micro web framework)
+- Requests (HTTP library)
 
-Python 3
+**Frontend**:
+- Vanilla JavaScript
+- CSS Grid/Flexbox
+- Fetch API
 
-Flask
+## 🚀 Getting Started
 
-Requests
+### Prerequisites
+- Python 3.8+
+- Git
+- Football-Data.org API key (free tier available)
 
-Frontend:
+### Installation
 
-Vanilla JavaScript
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/RamCharan-88/Soccer-matches-app.git
+   cd Soccer-matches-app
 
-CSS Grid
 
-Fetch API
+2. **Setup Backend**
+    ```bash
+    cd backend
+    cp .env.example .env  # Create environment file
 
-Setup
-Get API key from Football-Data.org
+  **Edit .env and add your API key:**
+  
+    API_KEY=your_football_data_api_key
 
-Clone repo:
 
-bash
-git clone https://github.com/your-username/soccer-matches-app.git
-Install dependencies:
+3. **Install dependencies**
+    ```bash
+    pip install -r requirements.txt
 
-bash
-pip install -r backend/requirements.txt
-Configure environment:
+4. **Run the backend server**
+    ```bash
+    python app.py
+ Server will run at http://localhost:5000
+ 
+5. **Open frontend**
+   
+    *Open frontend/index.html in your browser
+    *Or use a local server:
 
-bash
-cp backend/.env.example backend/.env
-Add your API key to .env
+    ```bash
+    python -m http.server 8000
 
-Run backend:
+  Then visit http://localhost:8000/frontend
 
-bash
-python backend/app.py
-Open frontend/index.html in browser
 
-Contributing
-PRs welcome! Please open an issue first to discuss changes.
+  ### Project Structure
 
-License
-MIT
+  Soccer-matches-app/
+├── backend/
+│   ├── app.py           # Flask application
+│   ├── requirements.txt # Python dependencies
+│   └── .env.example     # Environment template
+├── frontend/
+│   ├── index.html       # Main page
+│   ├── styles.css       # Styling
+│   └── script.js        # Frontend logic
+└── README.md            # This file
+
+  
+ ### 🤝 Contributing
+
+ Contributions are welcome! Please follow these steps:
+
+1. Fork the project
+
+2. Create your feature branch (git checkout -b feature/AmazingFeature)
+
+3. Commit your changes (git commit -m 'Add some amazing feature')
+
+4. Push to the branch (git push origin feature/AmazingFeature)
+
+5. Open a Pull Request
+
+ ### 📜 License
+
+   Distributed under the MIT License. See LICENSE for more information.
+    
+   
